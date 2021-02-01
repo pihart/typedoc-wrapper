@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "dependencies": {
     "typedoc": "^0.20.19",
-    "typedoc-plugin-custom-tags": "^1.0.2"
+    "typedoc-plugin-custom-tags": "github:pihart/typedoc-plugin-custom-tags#absolute-path"
   },
   "repository": {
     "type": "git",

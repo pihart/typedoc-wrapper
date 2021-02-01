@@ -11,7 +11,7 @@ npm i --save-dev github:pihart/typedoc
 ## Usage
 
 ```js
-const typedoc = require("../typedoc");
+const typedoc = require("typedoc-wrapper");
 
 typedoc("./src/index.ts");
 ```

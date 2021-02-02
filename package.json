@@ -1,6 +1,6 @@
 {
   "name": "typedoc-wrapper",
-  "version": "3.3.2",
+  "version": "3.3.3",
   "description": "Wrapper for typedoc and typedoc-plugin-custom-tags",
   "main": "src/index.js",
   "bin": {

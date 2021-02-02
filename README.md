@@ -5,7 +5,7 @@ Wrapper for typedoc and typedoc-plugin-custom-tags
 ## Installation
 
 ```shell
-npm i --save-dev github:pihart/typedoc
+npm i --save-dev typedoc-wrapper
 ```
 
 ## Usage

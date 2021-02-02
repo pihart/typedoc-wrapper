@@ -3,6 +3,9 @@
   "version": "3.2.0",
   "description": "Wrapper for typedoc and typedoc-plugin-custom-tags",
   "main": "src/index.js",
+  "bin": {
+    "tdx": "./bin/index.js"
+  },
   "dependencies": {
     "typedoc": "^0.20.19",
     "typedoc-plugin-custom-tags": "github:pihart/typedoc-plugin-custom-tags#pihart-dist-v1.1.0"

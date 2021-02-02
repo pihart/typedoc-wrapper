@@ -1,5 +1,8 @@
 # typedoc
 
+[![npm version](https://img.shields.io/npm/v/typedoc-wrapper.svg)][npm]
+[![test status](https://github.com/pihart/ts/workflows/Node.js%20CI/badge.svg)][github]
+
 Wrapper for typedoc and typedoc-plugin-custom-tags
 
 ## Installation
@@ -43,3 +46,6 @@ tpx path-to-file
 
 Does not yet support options like the library command does;
 see <https://github.com/pihart/typedoc/pull/4>;
+
+[npm]: https://www.npmjs.com/package/typescript-wrapper
+[github]: https://github.com/pihart/typescript-wrapper

@@ -1,11 +1,11 @@
 {
   "name": "typedoc-wrapper",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Wrapper for typedoc and typedoc-plugin-custom-tags",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "tdx": "./bin/index.js"
+    "tdx": "bin/index.js"
   },
   "scripts": {
     "build": "npm unlink typedoc-wrapper && tsc && npm link",

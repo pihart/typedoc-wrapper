@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-const run = require("../src");
+const { run } = require("..");
 const [, , filePath, ...rest] = process.argv;
 
 if (filePath === undefined) {
-  process.stdout.write("Usage: tdx path-to-file [...typedoc options]");
+  process.stdout.write("Usage: tdx <path-to-file> [...typedoc-options]");
   process.exitCode = 2;
 } else {
   run(filePath, { postArgs: rest })

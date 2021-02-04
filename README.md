@@ -32,6 +32,6 @@ typedoc("./src/index.ts");
 tdx <path-to-file> [...typedoc-options]
 ```
 
-[github]: https://github.com/pihart/typescript-wrapper
-[npm]: https://www.npmjs.com/package/typescript-wrapper
+[github]: https://github.com/pihart/typedoc-wrapper
+[npm]: https://www.npmjs.com/package/typedoc-wrapper
 [documentation]: https://pihart.github.io/typedoc-wrapper

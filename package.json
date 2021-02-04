@@ -8,7 +8,7 @@
     "tdx": "./bin/index.js"
   },
   "scripts": {
-    "build": "npm unlink && tsc && npm link",
+    "build": "npm unlink typedoc-wrapper && tsc && npm link",
     "predocs": "npm run build",
     "docs": "tdx src/index.ts",
     "prepublishOnly": "npm run docs"

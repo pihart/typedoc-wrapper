@@ -9,12 +9,12 @@ const DEFAULTS = {
 };
 
 /**
- * @param mainFile File or dir to execute on
- * @param customTagsJSONFile
- * @param themeDir
- * @param hideGenerator
- * @param {string | string[]} postArgs
- * @return {Promise<string>}
+ * @param {string} mainFile Relative or absolute path to the file or dir to execute on
+ * @param {string} [customTagsJSONFile] Relative or absolute path to JSON file defining custom tags
+ * @param {string} [themeDir] Relative or absolute path to theme directory
+ * @param {boolean} [hideGenerator] Whether to hide the message indicating generation by typedoc
+ * @param {string | string[]} postArgs Arguments passed directly through to typedoc
+ * @return {Promise}
  */
 const run = (
   mainFile,

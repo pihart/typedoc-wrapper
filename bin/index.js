@@ -6,7 +6,7 @@ if (filePath === undefined) {
   process.stdout.write("Usage: tdx <path-to-file> [...typedoc-options]");
   process.exitCode = 2;
 } else {
-  run(filePath, { postArgs: rest })
+  run(filePath, { preArgs: rest })
     .then(({ stdout, stderr }) => {
       process.stdout.write(stdout);
       process.stderr.write(stderr);

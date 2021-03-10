@@ -14,6 +14,7 @@ const DEFAULTS = {
  * @param customTagsJSONFile Relative or absolute path to JSON file defining custom tags
  * @param themeDir Relative or absolute path to theme directory
  * @param hideGenerator Whether to hide the message indicating generation by typedoc
+ * @param preArgs Arguments passed directly through to typedoc
  * @param postArgs Arguments passed directly through to typedoc
  */
 export const run = (
@@ -22,16 +23,20 @@ export const run = (
     customTagsJSONFile = DEFAULTS.CUSTOM_TAGS_JSON_FILE,
     themeDir = DEFAULTS.THEME_DIR,
     hideGenerator = true,
+    preArgs = "",
     postArgs = "",
   }: Partial<{
     customTagsJSONFile: string;
     themeDir: string;
     hideGenerator: boolean;
+    preArgs: string | string[];
     postArgs: string | string[];
   }> = {}
 ) =>
   execPromise(
     `npx typedoc ${mainFile} ${
+      typeof preArgs === "string" ? preArgs : preArgs.join(" ")
+    } ${
       hideGenerator ? "--hideGenerator" : ""
     } --custom-tags-config ${customTagsJSONFile} --theme ${themeDir} ${
       typeof postArgs === "string" ? postArgs : postArgs.join(" ")
